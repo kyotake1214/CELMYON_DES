@@ -1,0 +1,19 @@
+{
+  "name": "celmyon_des",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^3.0.3",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "connect-ssi": "^1.1.1",
+    "html-webpack-plugin": "^5.6.0",
+    "ssi-webpack-plugin": "^1.0.8",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
+  },
+  "scripts": {
+    "start": "webpack serve --mode development"
+  }
+}
