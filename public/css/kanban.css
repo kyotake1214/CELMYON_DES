@@ -1,0 +1,56 @@
+/* 看板セクション */
+.kanban {
+  background-image: url('../img/kanban-pc.png'); /* 画像を設定 */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start; /* コンテンツを左寄せ */
+  align-items: center;
+  padding: 0; /* 左側のスペースを確保 */
+  color: white;
+}
+
+.kanban-content {
+  max-width: 450px; /* コンテンツ幅の制限 */
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.kanban h1 {
+  font-size: 2.5rem; /* 大きめのフォントサイズ */
+  line-height: 1.4;  /* 行間調整 */
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: white;
+  color: #333;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  align-self: center;
+}
+
+.btn:hover {
+  background-color: #333;
+  color: white;
+}
+
+/* PC画面でのレイアウト調整 */
+@media (min-width: 1024px) {
+  .kanban-content {
+    max-width: 420px;
+    margin-left: 50%;
+    margin-right: auto;
+    padding-right: 0;
+    align-items: flex-start;
+  }
+  .btn {
+    align-self: flex-end; /* ボタンを右寄せ */
+  }
+}
