@@ -12,120 +12,173 @@
     <!-- kanban -->
     <section class="kanban">
       <div class="kanban-content">
-        <h1>天然由来の機能成分で化粧品・健康食品に<br>革新をもたらす</h1>
-        <a href="#" class="btn">About Us</a>
+        <h1>天然由来の機能成分で<br class="sp-none">化粧品・健康食品に<br>革新をもたらす</h1>
+        <a href="#" class="kanban-btn">
+          <img src="img/kanban/kanban-btn.png" alt="">
+        </a>
       </div>
-    </section>
+    </section>      
     <section class="labo">
       <div class="labo-content">
         <h2>CELMYONの<br>研究開発と取り組み</h2>
         <p class="h2-text">
           CELMYONでは研究開発を行い、常に最先端の原料の提供をします。<br>原料の研究開発に伴う私たちの取り組みを紹介します。
         </p>
-        
-        <div class="labo-items">
+        <div class="labo-items sp-slider">
           <div class="labo-item">
-            <img src="img/labo-story.png" alt="バオバブ油の研究開発ストーリー">
+            <img src="img/labo/labo-story.png" alt="バオバブ油の研究開発ストーリー">
             <h3>バオバブ油の研究開発ストーリー</h3>
             <p class="labo-item-text">抗酸化物を豊富に含み、オリーブオイルと比較して10倍高い酸化安定性</p>
           </div>
           
           <div class="labo-item">
-            <img src="img/labo-event.png" alt="イベント的なもの">
+            <img src="img/labo/labo-event.png" alt="イベント的なもの">
             <h3>イベント的なもの</h3>
             <p class="labo-item-text">開催したイベントなどの情報を掲載。</p>
           </div>
           
           <div class="labo-item">
-            <img src="img/labo-news.png" alt="トピック的なもの">
+            <img src="img/labo/labo-news.png" alt="トピック的なもの">
             <h3>トピック的なもの</h3>
             <p class="labo-item-text">award受賞など、会社のトピックを紹介することも可能。</p>
           </div>
-        </div>
-    
-        <a href="#" class="btn-labo">最新情報</a>
+        </div>    
+        <a href="#" class="labo-btn">
+          <img src="img/labo/labo-btn.png" alt="">
+        </a>
       </div>
     </section>
     <section class="product">
       <div class="product-content">
-        <h2>Pick Up Products</h2>
+        <h2>Product Categories</h2>
         <p class="h2-text">
-          CELMYONでは研究開発を行い、常に最先端の原料の提供をします。<br>人間の肌に適した原料の開発、コーディネートが可能です。
+          CELMYONでは研究開発を行い、常に最先端の原料の提供をします。人間の肌に適した原料の開発、コーディネートが可能です。商品カテゴリーを確認ください。
         </p>
-    
+        <div class="category-container">
+          <div class="category-items">
+            <div class="category-item">
+              <a href="#" class="category-item-link">
+                <img src="img/product/category-01.png" alt="">
+              </a>
+            </div>
+            <div class="category-item">
+              <a href="#" class="category-item-link">
+                <img src="img/product/category-02.png" alt="">
+              </a>
+            </div>
+            <div class="category-item">
+              <a href="#" class="category-item-link">
+                <img src="img/product/category-03.png" alt="">
+              </a>
+            </div>
+            <div class="category-item hidden">
+              <a href="#" class="category-item-link">
+                <img src="img/product/category-01.png" alt="">
+              </a>
+            </div>
+            <div class="category-item hidden">
+              <a href="#" class="category-item-link">
+                <img src="img/product/category-01.png" alt="">
+              </a>
+            </div>
+            <div class="category-item hidden">
+              <a href="#" class="category-item-link">
+                <img src="img/product/category-01.png" alt="">
+              </a>
+            </div>
+            <button id="showMoreButton" class="hidden"> 
+              <img src="img/product/showmore-btn.png" alt="もっと見る">
+            </button>
+          </div>
+          <div class="product-btn-box hidden">
+            <a href="#" class="product-btn">
+              <img src="img/product/more-btn.png" alt="商品カテゴリー">
+            </a>
+          </div>
+        </div>
+        <h2>Pick Up Products</h2>
         <div class="product-items">
           <div class="product-item">
-            <img src="img/product-01.png" alt="バオバブオイル">
-            <div class="product-info">
-              <div class="product-tags">
-                <span>クリーム</span>
-                <span>保湿オイル</span>
+            <a href="" class="product-item-link">
+              <img src="img/product/product-01.png" alt="バオバブオイル">
+              <div class="product-info">
+                <div class="product-tags">
+                  <span>クリーム</span>
+                  <span>保湿オイル</span>
+                </div>
+                <h3>バオバブオイル</h3>
+                <p class="product-info-text">ビタミンA・D・E・Fやパルミチン酸、オメガ系などの脂肪酸類、トコフェロール...</p>
               </div>
-              <h3>バオバブオイル</h3>
-              <p>ビタミンA・D・E・Fやパルミチン酸、オメガ系などの脂肪酸類、トコフェロール...</p>
-            </div>
+            </a>
           </div>
     
           <!-- 繰り返し構造の例。ここに他のアイテムも同様に追加 -->
           <div class="product-item">
-            <img src="img/product-01.png" alt="バオバブオイル">
-            <div class="product-info">
-              <div class="product-tags">
-                <span>クリーム</span>
-                <span>保湿オイル</span>
+            <a href="" class="product-item-link">
+              <img src="img/product/product-01.png" alt="バオバブオイル">
+              <div class="product-info">
+                <div class="product-tags">
+                  <span>クリーム</span>
+                  <span>保湿オイル</span>
+                </div>
+                <h3>バオバブオイル</h3>
+                <p class="product-info-text">ビタミンA・D・E・Fやパルミチン酸、オメガ系などの脂肪酸類、トコフェロール...</p>
               </div>
-              <h3>バオバブオイル</h3>
-              <p>ビタミンA・D・E・Fやパルミチン酸、オメガ系などの脂肪酸類、トコフェロール...</p>
-            </div>
-          </div> 
+            </a>
+          </div>
           <!-- 他のアイテムを続けて追加 -->
           <div class="product-item">
-            <img src="img/product-01.png" alt="バオバブオイル">
-            <div class="product-info">
-              <div class="product-tags">
-                <span>クリーム</span>
-                <span>保湿オイル</span>
+            <a href="" class="product-item-link">
+              <img src="img/product/product-01.png" alt="バオバブオイル">
+              <div class="product-info">
+                <div class="product-tags">
+                  <span>クリーム</span>
+                  <span>保湿オイル</span>
+                </div>
+                <h3>バオバブオイル</h3>
+                <p class="product-info-text">ビタミンA・D・E・Fやパルミチン酸、オメガ系などの脂肪酸類、トコフェロール...</p>
               </div>
-              <h3>バオバブオイル</h3>
-              <p>ビタミンA・D・E・Fやパルミチン酸、オメガ系などの脂肪酸類、トコフェロール...</p>
-            </div>
+            </a>
           </div>
           <div class="product-item">
-            <img src="img/product-01.png" alt="バオバブオイル">
-            <div class="product-info">
-              <div class="product-tags">
-                <span>クリーム</span>
-                <span>保湿オイル</span>
+            <a href="" class="product-item-link">
+              <img src="img/product/product-01.png" alt="バオバブオイル">
+              <div class="product-info">
+                <div class="product-tags">
+                  <span>クリーム</span>
+                  <span>保湿オイル</span>
+                </div>
+                <h3>バオバブオイル</h3>
+                <p class="product-info-text">ビタミンA・D・E・Fやパルミチン酸、オメガ系などの脂肪酸類、トコフェロール...</p>
               </div>
-              <h3>バオバブオイル</h3>
-              <p>ビタミンA・D・E・Fやパルミチン酸、オメガ系などの脂肪酸類、トコフェロール...</p>
-            </div>
+            </a>
           </div>
           <div class="product-item">
-            <img src="img/product-01.png" alt="バオバブオイル">
-            <div class="product-info">
-              <div class="product-tags">
-                <span>クリーム</span>
-                <span>保湿オイル</span>
+            <a href="" class="product-item-link">
+              <img src="img/product/product-01.png" alt="バオバブオイル">
+              <div class="product-info">
+                <div class="product-tags">
+                  <span>クリーム</span>
+                  <span>保湿オイル</span>
+                </div>
+                <h3>バオバブオイル</h3>
+                <p class="product-info-text">ビタミンA・D・E・Fやパルミチン酸、オメガ系などの脂肪酸類、トコフェロール...</p>
               </div>
-              <h3>バオバブオイル</h3>
-              <p>ビタミンA・D・E・Fやパルミチン酸、オメガ系などの脂肪酸類、トコフェロール...</p>
-            </div>
+            </a>
           </div>
           <div class="product-item">
-            <img src="img/product-01.png" alt="バオバブオイル">
-            <div class="product-info">
-              <div class="product-tags">
-                <span>クリーム</span>
-                <span>保湿オイル</span>
+            <a href="" class="product-item-link">
+              <img src="img/product/product-01.png" alt="バオバブオイル">
+              <div class="product-info">
+                <div class="product-tags">
+                  <span>クリーム</span>
+                  <span>保湿オイル</span>
+                </div>
+                <h3>バオバブオイル</h3>
+                <p class="product-info-text">ビタミンA・D・E・Fやパルミチン酸、オメガ系などの脂肪酸類、トコフェロール...</p>
               </div>
-              <h3>バオバブオイル</h3>
-              <p>ビタミンA・D・E・Fやパルミチン酸、オメガ系などの脂肪酸類、トコフェロール...</p>
-            </div>
+            </a>
           </div>
-        </div>
-        <div class="product-btn-box">
-          <a href="#" class="btn-product">商品一覧</a>
         </div>
       </div>
     </section>
@@ -134,12 +187,12 @@
         <h2>Company Information</h2>
         <div class="info-items">
           <div class="info-item">
-            <img src="img/info-message.png" alt="代表メッセージ">
+            <img src="img/info/info-message.png" alt="代表メッセージ">
             <h3>代表メッセージ</h3>
             <p>代表メッセージ代表メッセージ代表メッセージ代表メッセージ代表メッセージ代表メッセージ代表メッセージ</p>
           </div>
           <div class="info-item">
-            <img src="img/info-overview.png" alt="会社概要">
+            <img src="img/info/info-overview.png" alt="会社概要">
             <h3>会社概要</h3>
             <p>会社概要会社概要会社概要会社概要会社概要会社概要会社概要会社概要会社概要会社概要会社概要会社概要</p>
           </div>

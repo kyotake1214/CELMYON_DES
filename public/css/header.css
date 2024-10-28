@@ -1,4 +1,4 @@
-/* 基本スタイル */
+/* SP用のスタイル（デフォルト） */
 .header {
   position: fixed;
   top: 0;
@@ -12,57 +12,91 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 14px 16px;
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
+  width: 45%;
 }
 
 .nav-links {
   list-style: none;
+  display: none; /* SPでは非表示 */
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+/* SP */
+@media (max-width: 1023px) {
+  .nav-links {
+    position: absolute;
+    top: 4.3rem;
+    right: 0;
+    width: 100%;
+  }
+}
+
+.nav-links.show {
   display: flex;
-  gap: 2.5rem;
 }
 
 .nav-links li {
-  display: inline;
-  font-size: 1.375rem;
+  border-bottom: 1px solid #eaeaea;
 }
 
-.nav-links a {
-  text-decoration: none;
+.nav-links li a {
+  font-size: 1.2rem;
   color: #333;
+  text-decoration: none;
   font-weight: bold;
+  padding: 1rem;
+  display: block;
 }
 
 .menu-toggle {
-  display: none;
+  display: block;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
-/* レスポンシブデザイン */
-@media (max-width: 768px) {
+/* PC用のスタイル */
+@media (min-width: 1024px) {
+  nav {
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    height: 80px;
+  }
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 240px;
+  }
   .nav-links {
-    display: none;
-    flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.9);
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 100%;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    padding: 0;
   }
 
-  .nav-links.show {
-    display: flex;
+  .nav-links li {
+    display: inline;
+    padding: 1rem 0;
+    font-size: 1.375rem;
+    border-bottom: none;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+
+  .nav-links a:hover {
+    text-decoration: underline;
   }
 
   .menu-toggle {
-    display: block;
-    background: none;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
+    display: none; /* PCではハンバーガーメニューを非表示 */
   }
 }
