@@ -1,0 +1,85 @@
+/* HTML5要素のデフォルトをリセット */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5要素の表示をブロックレベルにリセット */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+/* リストスタイルをリセット */
+ol, ul {
+  list-style: none;
+}
+/* 引用タグのリセット */
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+/* テーブルのセル間隔をリセット */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* グローバル設定 */
+body {
+  line-height: 1;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* 画像がコンテナからはみ出さないようにする */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+button,
+input[type="button"],
+input[type="submit"],
+a.btn {
+  display: inline-block; /* インラインブロックにしてサイズを調整 */
+  background: none; /* 背景をリセット */
+  border: none; /* ボーダーをリセット */
+  padding: 0; /* パディングをリセット */
+  margin: 0; /* マージンをリセット */
+  font: inherit; /* フォントを親要素から継承 */
+  color: inherit; /* テキストカラーを親要素から継承 */
+  text-decoration: none; /* 下線をリセット */
+  cursor: pointer; /* カーソルをポインタに */
+  outline: none; /* フォーカス時のアウトラインをリセット */
+}
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+a.btn:hover {
+  opacity: 0.9; /* ホバー時の透過 */
+}
+button:focus,
+input[type="button"]:focus,
+input[type="submit"]:focus,
+a.btn:focus {
+  outline: none; /* フォーカス時のアウトラインをリセット */
+}

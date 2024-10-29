@@ -1,0 +1,114 @@
+/* Inquiryセクションのスタイル */
+.inquiry h2 {
+  text-align: center;
+}
+.inquiry-content {
+  background-color: #f6f6f6;
+  padding: 1.5rem;
+  border-radius: 10px;
+  max-width: 1200px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.inquiry input, .inquiry textarea {
+  font-size: 0.9rem;
+}
+.btn-inquiry {
+  padding: 0.6rem 1.2rem;
+}
+.inquiry form {
+  display: flex;
+  flex-direction: column;
+}
+.inquiry label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #717171;
+}
+.inquiry input, .inquiry textarea {
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.inquiry input::placeholder {
+  color: #999;
+}
+.required {
+  color: red;
+}
+.btn-inquiry {
+  background-color: #007BFF;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  /* width: 300px; */
+  margin: 0 auto;
+}
+.btn-inquiry:hover {
+  background-color: #0056b3;
+}
+/* PC画面でのレイアウト調整 */
+@media (min-width: 769px) {
+  .inquiry {
+    background-image: url('../img/inquiry/inquiry-bg.png'); /* 背景画像 */
+    background-size: cover;
+    background-position: center;
+    padding: 4rem;
+  }
+  .inquiry-content {
+    background-color: #f6f6f6;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 1200px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    box-sizing: border-box;
+  }  
+  .inquiry h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }  
+  .inquiry form {
+    display: flex;
+    flex-direction: column;
+  }  
+  .inquiry label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }  
+  .inquiry input, .inquiry textarea {
+    padding: 0.75rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }  
+  .inquiry input::placeholder {
+    color: #999;
+  }  
+  .required {
+    color: red;
+  }  
+  .btn-inquiry {
+    background-color: #007BFF;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    /* width: 300px; */
+    margin: 0 auto;
+  }  
+  .btn-inquiry:hover {
+    background-color: #0056b3;
+  }
+}

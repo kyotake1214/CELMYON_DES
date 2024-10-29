@@ -1,0 +1,69 @@
+/* Infoセクションのスタイル */
+.info {
+  background: linear-gradient(90deg, #f3f3f3, #e0e0e0);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.info-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.info h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.info-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.info-item {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.info-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.info-item img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.info-item h3 {
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+}
+
+.info-item p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* PC画面でのレイアウト調整 */
+@media (min-width: 769px) {
+  .info-items {
+    max-width: 848px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .info-item {
+    width: auto;
+    border-radius: 10px;
+  }
+
+  .info-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+}

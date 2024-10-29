@@ -1,0 +1,61 @@
+@import url('reset.css');
+@import url('header.css');
+@import url('kanban.css');
+@import url('labo.css');
+@import url('product.css');
+@import url('info.css');
+@import url('inquiry.css');
+@import url('footer.css');
+
+body {
+  font-family: YuGothic, 'Yu Gothic', sans-serif;
+  line-height: 1.5;
+} 
+section {
+  padding: 2.25rem 1.5rem;
+}
+h2 {
+  font-size: 8.21vw;
+  font-weight: bold;
+  line-height: 1.3;
+  margin-bottom: 1.5rem;
+}
+.h2-text {
+  font-size: 5.13vw; 
+}
+h3 {
+  font-size: 6.15vw;
+  font-weight: bold;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+.sp-none {
+  display: none;
+}
+
+
+@media (min-width: 769px) {
+  body {
+    line-height: 1.3;
+  }
+  section {
+    padding: 4.5rem 4rem;
+  }
+  a:hover {
+    opacity: .8;
+    text-decoration: underline;
+  }
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    margin-bottom: 3rem;
+  }
+  .h2-text {
+    font-size: 1.2rem;
+    line-height: 1.3; 
+    margin-bottom: 3rem;
+  }
+  .sp-none {
+    display: block;
+  }
+}

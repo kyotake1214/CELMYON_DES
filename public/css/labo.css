@@ -1,0 +1,91 @@
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .labo {
+    background-image: url('../img/labo/labo-bg-sp.png'); /* 背景画像 */
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    padding-bottom: 1rem;
+  }
+  .labo .h2-text {
+    width: 75%;
+    font-size: 5.13vw;
+  }
+  .sp-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    margin: 1.5rem -1.5rem;
+    padding: 0 1.5rem;
+  }
+  .sp-slider .labo-item {
+    flex: 0 0 75%;
+    scroll-snap-align: start;
+    padding-left: 1.5rem;
+  }
+  .sp-slider .labo-item img {
+    margin-bottom: 1rem;
+  }
+  .labo-item-text {
+    font-size: 4.1vw;
+  }
+  .labo-btn {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* PC画面でのレイアウト調整 */
+@media (min-width: 769px) {
+  .labo {
+    background-image: url('../img/labo/labo-bg-pc.png'); /* 背景画像 */
+    background-size: cover;
+    background-position: center;
+    color: #333;
+  }
+  
+  .labo-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .labo-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 3.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .labo-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    text-align: left;
+  }
+  
+  .labo-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .labo-item h3 {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    height: 4.25rem;
+  }
+  
+  .labo-item-text {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .labo-btn {
+    display: flex;
+    align-self: end;
+  }
+}
